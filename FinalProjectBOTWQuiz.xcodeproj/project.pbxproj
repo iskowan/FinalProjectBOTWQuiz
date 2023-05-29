@@ -13,6 +13,11 @@
 		039EB4FC2A25640900F4DE83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039EB4FA2A25640900F4DE83 /* Main.storyboard */; };
 		039EB4FE2A25640A00F4DE83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039EB4FD2A25640A00F4DE83 /* Assets.xcassets */; };
 		039EB5012A25640A00F4DE83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039EB4FF2A25640A00F4DE83 /* LaunchScreen.storyboard */; };
+		039EB5092A25649600F4DE83 /* HyliaSerifBeta-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 039EB5082A25649600F4DE83 /* HyliaSerifBeta-Regular.otf */; };
+		039EB50B2A25649B00F4DE83 /* BOTWBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 039EB50A2A25649B00F4DE83 /* BOTWBackground.png */; };
+		039EB50D2A2564E900F4DE83 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039EB50C2A2564E900F4DE83 /* QuestionsViewController.swift */; };
+		039EB50F2A2564F700F4DE83 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039EB50E2A2564F700F4DE83 /* ResultsViewController.swift */; };
+		039EB5112A25650200F4DE83 /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039EB5102A25650200F4DE83 /* QuestionData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		039EB4FD2A25640A00F4DE83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		039EB5002A25640A00F4DE83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		039EB5022A25640A00F4DE83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		039EB5082A25649600F4DE83 /* HyliaSerifBeta-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "HyliaSerifBeta-Regular.otf"; path = "../../../../Downloads/Hylia Serif Beta v0-009/HyliaSerifBeta-Regular.otf"; sourceTree = "<group>"; };
+		039EB50A2A25649B00F4DE83 /* BOTWBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BOTWBackground.png; path = ../../../../Desktop/BOTWBackground.png; sourceTree = "<group>"; };
+		039EB50C2A2564E900F4DE83 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		039EB50E2A2564F700F4DE83 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		039EB5102A25650200F4DE83 /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +69,15 @@
 				039EB4F42A25640900F4DE83 /* AppDelegate.swift */,
 				039EB4F62A25640900F4DE83 /* SceneDelegate.swift */,
 				039EB4F82A25640900F4DE83 /* ViewController.swift */,
+				039EB5102A25650200F4DE83 /* QuestionData.swift */,
+				039EB50C2A2564E900F4DE83 /* QuestionsViewController.swift */,
+				039EB50E2A2564F700F4DE83 /* ResultsViewController.swift */,
 				039EB4FA2A25640900F4DE83 /* Main.storyboard */,
 				039EB4FD2A25640A00F4DE83 /* Assets.xcassets */,
 				039EB4FF2A25640A00F4DE83 /* LaunchScreen.storyboard */,
 				039EB5022A25640A00F4DE83 /* Info.plist */,
+				039EB5082A25649600F4DE83 /* HyliaSerifBeta-Regular.otf */,
+				039EB50A2A25649B00F4DE83 /* BOTWBackground.png */,
 			);
 			path = FinalProjectBOTWQuiz;
 			sourceTree = "<group>";
@@ -125,8 +140,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				039EB5092A25649600F4DE83 /* HyliaSerifBeta-Regular.otf in Resources */,
 				039EB5012A25640A00F4DE83 /* LaunchScreen.storyboard in Resources */,
 				039EB4FE2A25640A00F4DE83 /* Assets.xcassets in Resources */,
+				039EB50B2A25649B00F4DE83 /* BOTWBackground.png in Resources */,
 				039EB4FC2A25640900F4DE83 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +157,9 @@
 			files = (
 				039EB4F92A25640900F4DE83 /* ViewController.swift in Sources */,
 				039EB4F52A25640900F4DE83 /* AppDelegate.swift in Sources */,
+				039EB50D2A2564E900F4DE83 /* QuestionsViewController.swift in Sources */,
+				039EB5112A25650200F4DE83 /* QuestionData.swift in Sources */,
+				039EB50F2A2564F700F4DE83 /* ResultsViewController.swift in Sources */,
 				039EB4F72A25640900F4DE83 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
