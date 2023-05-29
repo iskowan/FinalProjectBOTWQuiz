@@ -12,6 +12,7 @@ class QuestionsViewController: UIViewController {
     @IBOutlet var questionImageView: UIImageView!
     
     @IBOutlet var questionLabel: UILabel!
+    
     @IBOutlet var button1: UIButton!
     @IBOutlet var button2: UIButton!
     @IBOutlet var button3: UIButton!

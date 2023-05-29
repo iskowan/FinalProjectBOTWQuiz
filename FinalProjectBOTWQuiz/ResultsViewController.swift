@@ -12,8 +12,6 @@ class ResultsViewController: UIViewController {
     @IBOutlet var resultsLavel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
     
-    @IBOutlet var restartButton: UIButton!
-    
     var responses: [Answer] = []
     
     init?(coder: NSCoder, responses: [Answer]) {
@@ -28,19 +26,19 @@ class ResultsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        calculateCorrectAnswers()
+        //calculateCorrectAnswers()
     }
     
-    func calculateCorrectAnswers() {
-        let frequencyOfAnswers = responses.reduce(into: [answerCorrect: Int]()) { (counts, answer) in
-            if let existingCount = counts[answer.type] {
-                counts[answer.type] = existingCount + 1
-            } else {
-                counts[answer.type] = 1
-            }
-        }
-        //self.resultsLavel.text = "You got \()"
-    }
+//    func calculateCorrectAnswers() {
+//        let frequencyOfAnswers = responses.reduce(into: [answerCorrect: Int]()) { (counts, answer) in
+//            if let existingCount = counts[answer.type] {
+//                counts[answer.type] = existingCount + 1
+//            } else {
+//                counts[answer.type] = 1
+//            }
+//        }
+//        //self.resultsLavel.text = "You got \()"
+//    }
     
         // Do any additional setup after loading the view.
         
