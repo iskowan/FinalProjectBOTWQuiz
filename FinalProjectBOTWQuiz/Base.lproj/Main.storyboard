@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k2Z-4g-3om">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -14,19 +14,48 @@
     </customFonts>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="SKg-77-2qZ">
+        <scene sceneID="1ES-fz-Uic">
             <objects>
-                <viewController id="k2Z-4g-3om" customClass="ViewController" customModule="BOTW_Quiz_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fiy-6z-eDt">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                <viewController id="AP3-Qe-qLg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kop-9n-MWO">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BOTWBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="c0X-Z4-SsZ">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eav-b7-Dhz">
+                                <rect key="frame" x="30" y="257" width="330" height="330"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="330" id="4Sk-8I-9Hx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="47Q-mG-alQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Eav-b7-Dhz" firstAttribute="leading" secondItem="47Q-mG-alQ" secondAttribute="leading" constant="30" id="KkW-KA-8aE"/>
+                            <constraint firstItem="Eav-b7-Dhz" firstAttribute="centerX" secondItem="Kop-9n-MWO" secondAttribute="centerX" id="TGQ-C8-9Hd"/>
+                            <constraint firstItem="Eav-b7-Dhz" firstAttribute="centerY" secondItem="Kop-9n-MWO" secondAttribute="centerY" id="iGf-eE-jds"/>
+                            <constraint firstItem="47Q-mG-alQ" firstAttribute="trailing" secondItem="Eav-b7-Dhz" secondAttribute="trailing" constant="30" id="r6q-xT-umc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xel-4u-lj2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-757" y="-27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SKg-77-2qZ">
+            <objects>
+                <viewController id="k2Z-4g-3om" customClass="ViewController" customModule="FinalProjectBOTWQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fiy-6z-eDt">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BOTWBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="JN9-Mv-G80">
+                                <rect key="frame" x="0.0" y="0.0" width="415" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="Ycx-y4-qcI">
-                                <rect key="frame" x="26" y="381.33333333333331" width="341" height="89.333333333333314"/>
+                                <rect key="frame" x="24.666666666666657" y="377.33333333333331" width="341" height="89.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breath Of The Wild Quiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Glp-Lm-mA4">
                                         <rect key="frame" x="0.0" y="0.0" width="341" height="36"/>
@@ -35,7 +64,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7w-Vt-ZLf">
-                                        <rect key="frame" x="140" y="55" width="61.333333333333343" height="34.333333333333343"/>
+                                        <rect key="frame" x="139.66666666666669" y="55" width="61.333333333333343" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="tinted" title="Start"/>
                                         <connections>
@@ -44,6 +73,14 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BotW_Guardian_Artwork Background Removed.png" translatesAutoresizingMaskIntoConstraints="NO" id="fuY-jG-Uot">
+                                <rect key="frame" x="-33" y="499" width="457" height="321"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BotW_Link Background Removed.png" translatesAutoresizingMaskIntoConstraints="NO" id="skO-4a-lBR">
+                                <rect key="frame" x="0.0" y="63" width="282" height="282"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DLh-in-Ag1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -56,27 +93,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OJH-EA-IOz" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114" y="-27"/>
+            <point key="canvasLocation" x="113.04347826086958" y="-28.125"/>
         </scene>
         <!--Questions View Controller-->
         <scene sceneID="A6l-nF-QVk">
             <objects>
-                <viewController id="Hom-tW-aWc" customClass="QuestionsViewController" customModule="BOTW_Quiz_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Hom-tW-aWc" customClass="QuestionsViewController" customModule="FinalProjectBOTWQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="12V-iZ-XMU">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BOTWBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="NqY-fd-tKS">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hZg-Al-ByD">
-                                <rect key="frame" x="42" y="103" width="309" height="249"/>
+                                <rect key="frame" x="42" y="91" width="306" height="249"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="249" id="yob-u7-Enn"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="fxL-nK-W6S">
-                                <rect key="frame" x="21.666666666666657" y="406.66666666666663" width="350" height="331.66666666666663"/>
+                                <rect key="frame" x="20" y="394.66666666666663" width="350" height="331.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gti-ZS-bje">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="34.333333333333336"/>
@@ -158,7 +195,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="eoR-9M-Tfz"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VT5-29-dvo">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -173,13 +210,17 @@
         <!--Results-->
         <scene sceneID="DRz-x1-IVx">
             <objects>
-                <viewController id="Bms-rJ-mIP" customClass="ResultsViewController" customModule="BOTW_Quiz_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Bms-rJ-mIP" customClass="ResultsViewController" customModule="FinalProjectBOTWQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j5H-LO-uqL">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BOTWBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lrf-7g-K2R">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="SZH-UA-koy">
-                                <rect key="frame" x="158.66666666666666" y="369.66666666666669" width="76" height="112.66666666666669"/>
+                                <rect key="frame" x="157" y="365.66666666666669" width="76" height="112.66666666666669"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsl-LK-tcc">
                                         <rect key="frame" x="0.0" y="0.0" width="76" height="36"/>
@@ -217,11 +258,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QNV-uU-qTO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2465" y="-27"/>
+            <point key="canvasLocation" x="2463.768115942029" y="-27.455357142857142"/>
         </scene>
     </scenes>
     <resources>
         <image name="BOTWBackground.png" width="475.5" height="589.5"/>
+        <image name="BotW_Guardian_Artwork Background Removed.png" width="1200" height="657"/>
+        <image name="BotW_Link Background Removed.png" width="476" height="600"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

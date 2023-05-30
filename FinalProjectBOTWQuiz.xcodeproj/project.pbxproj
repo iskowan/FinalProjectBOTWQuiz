@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		039EB4F52A25640900F4DE83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039EB4F42A25640900F4DE83 /* AppDelegate.swift */; };
 		039EB4F72A25640900F4DE83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039EB4F62A25640900F4DE83 /* SceneDelegate.swift */; };
-		039EB4F92A25640900F4DE83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039EB4F82A25640900F4DE83 /* ViewController.swift */; };
 		039EB4FC2A25640900F4DE83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039EB4FA2A25640900F4DE83 /* Main.storyboard */; };
 		039EB4FE2A25640A00F4DE83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039EB4FD2A25640A00F4DE83 /* Assets.xcassets */; };
 		039EB5012A25640A00F4DE83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039EB4FF2A25640A00F4DE83 /* LaunchScreen.storyboard */; };
@@ -18,13 +17,14 @@
 		039EB50D2A2564E900F4DE83 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039EB50C2A2564E900F4DE83 /* QuestionsViewController.swift */; };
 		039EB50F2A2564F700F4DE83 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039EB50E2A2564F700F4DE83 /* ResultsViewController.swift */; };
 		039EB5112A25650200F4DE83 /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039EB5102A25650200F4DE83 /* QuestionData.swift */; };
+		039EB5132A256D1E00F4DE83 /* BotW_Link Background Removed.png in Resources */ = {isa = PBXBuildFile; fileRef = 039EB5122A256D1E00F4DE83 /* BotW_Link Background Removed.png */; };
+		039EB5152A256DD700F4DE83 /* BotW_Guardian_Artwork Background Removed.png in Resources */ = {isa = PBXBuildFile; fileRef = 039EB5142A256DD700F4DE83 /* BotW_Guardian_Artwork Background Removed.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		039EB4F12A25640900F4DE83 /* FinalProjectBOTWQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProjectBOTWQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		039EB4F42A25640900F4DE83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		039EB4F62A25640900F4DE83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		039EB4F82A25640900F4DE83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		039EB4FB2A25640900F4DE83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		039EB4FD2A25640A00F4DE83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		039EB5002A25640A00F4DE83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +34,8 @@
 		039EB50C2A2564E900F4DE83 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		039EB50E2A2564F700F4DE83 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		039EB5102A25650200F4DE83 /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
+		039EB5122A256D1E00F4DE83 /* BotW_Link Background Removed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BotW_Link Background Removed.png"; path = "../../../../Downloads/BotW_Link Background Removed.png"; sourceTree = "<group>"; };
+		039EB5142A256DD700F4DE83 /* BotW_Guardian_Artwork Background Removed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BotW_Guardian_Artwork Background Removed.png"; path = "../../../../Downloads/BotW_Guardian_Artwork Background Removed.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +70,6 @@
 			children = (
 				039EB4F42A25640900F4DE83 /* AppDelegate.swift */,
 				039EB4F62A25640900F4DE83 /* SceneDelegate.swift */,
-				039EB4F82A25640900F4DE83 /* ViewController.swift */,
 				039EB5102A25650200F4DE83 /* QuestionData.swift */,
 				039EB50C2A2564E900F4DE83 /* QuestionsViewController.swift */,
 				039EB50E2A2564F700F4DE83 /* ResultsViewController.swift */,
@@ -78,6 +79,8 @@
 				039EB5022A25640A00F4DE83 /* Info.plist */,
 				039EB5082A25649600F4DE83 /* HyliaSerifBeta-Regular.otf */,
 				039EB50A2A25649B00F4DE83 /* BOTWBackground.png */,
+				039EB5122A256D1E00F4DE83 /* BotW_Link Background Removed.png */,
+				039EB5142A256DD700F4DE83 /* BotW_Guardian_Artwork Background Removed.png */,
 			);
 			path = FinalProjectBOTWQuiz;
 			sourceTree = "<group>";
@@ -140,6 +143,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				039EB5152A256DD700F4DE83 /* BotW_Guardian_Artwork Background Removed.png in Resources */,
+				039EB5132A256D1E00F4DE83 /* BotW_Link Background Removed.png in Resources */,
 				039EB5092A25649600F4DE83 /* HyliaSerifBeta-Regular.otf in Resources */,
 				039EB5012A25640A00F4DE83 /* LaunchScreen.storyboard in Resources */,
 				039EB4FE2A25640A00F4DE83 /* Assets.xcassets in Resources */,
@@ -155,7 +160,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				039EB4F92A25640900F4DE83 /* ViewController.swift in Sources */,
 				039EB4F52A25640900F4DE83 /* AppDelegate.swift in Sources */,
 				039EB50D2A2564E900F4DE83 /* QuestionsViewController.swift in Sources */,
 				039EB5112A25650200F4DE83 /* QuestionData.swift in Sources */,
