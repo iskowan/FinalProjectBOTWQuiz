@@ -14,35 +14,6 @@
     </customFonts>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="1ES-fz-Uic">
-            <objects>
-                <viewController id="AP3-Qe-qLg" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Kop-9n-MWO">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eav-b7-Dhz">
-                                <rect key="frame" x="30" y="257" width="330" height="330"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="330" id="4Sk-8I-9Hx"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="47Q-mG-alQ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Eav-b7-Dhz" firstAttribute="leading" secondItem="47Q-mG-alQ" secondAttribute="leading" constant="30" id="KkW-KA-8aE"/>
-                            <constraint firstItem="Eav-b7-Dhz" firstAttribute="centerX" secondItem="Kop-9n-MWO" secondAttribute="centerX" id="TGQ-C8-9Hd"/>
-                            <constraint firstItem="Eav-b7-Dhz" firstAttribute="centerY" secondItem="Kop-9n-MWO" secondAttribute="centerY" id="iGf-eE-jds"/>
-                            <constraint firstItem="47Q-mG-alQ" firstAttribute="trailing" secondItem="Eav-b7-Dhz" secondAttribute="trailing" constant="30" id="r6q-xT-umc"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xel-4u-lj2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-757" y="-27"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="SKg-77-2qZ">
             <objects>
                 <viewController id="k2Z-4g-3om" customClass="ViewController" customModule="FinalProjectBOTWQuiz" customModuleProvider="target" sceneMemberID="viewController">
@@ -73,12 +44,12 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BotW_Guardian_Artwork Background Removed.png" translatesAutoresizingMaskIntoConstraints="NO" id="fuY-jG-Uot">
-                                <rect key="frame" x="-33" y="499" width="457" height="321"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BotW_Link Background Removed.png" translatesAutoresizingMaskIntoConstraints="NO" id="skO-4a-lBR">
                                 <rect key="frame" x="0.0" y="63" width="282" height="282"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BotW_Guardian_Artwork Background Removed.png" translatesAutoresizingMaskIntoConstraints="NO" id="fuY-jG-Uot">
+                                <rect key="frame" x="-42" y="500" width="457" height="321"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -165,6 +136,7 @@
                             <constraint firstItem="hZg-Al-ByD" firstAttribute="centerX" secondItem="NqY-fd-tKS" secondAttribute="centerX" id="8b6-Sf-bDH"/>
                             <constraint firstItem="fxL-nK-W6S" firstAttribute="top" secondItem="hZg-Al-ByD" secondAttribute="bottom" constant="54.666666666666629" id="Le5-z2-NOI"/>
                             <constraint firstItem="hZg-Al-ByD" firstAttribute="centerX" secondItem="12V-iZ-XMU" secondAttribute="centerX" id="Q0R-mH-XUt"/>
+                            <constraint firstItem="LQF-Ma-NDf" firstAttribute="bottom" secondItem="fxL-nK-W6S" secondAttribute="bottom" constant="83.670000000000002" id="RYB-aE-KAd"/>
                             <constraint firstItem="NqY-fd-tKS" firstAttribute="leading" secondItem="LQF-Ma-NDf" secondAttribute="leading" id="ZRF-dy-5kw"/>
                             <constraint firstAttribute="bottomMargin" secondItem="NqY-fd-tKS" secondAttribute="bottom" constant="-34" id="Zfh-Bt-UWW"/>
                             <constraint firstItem="hZg-Al-ByD" firstAttribute="top" secondItem="LQF-Ma-NDf" secondAttribute="top" id="gPc-zT-9ed"/>

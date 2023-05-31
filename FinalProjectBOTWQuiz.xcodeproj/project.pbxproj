@@ -13,12 +13,12 @@
 		039EB4FE2A25640A00F4DE83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039EB4FD2A25640A00F4DE83 /* Assets.xcassets */; };
 		039EB5012A25640A00F4DE83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039EB4FF2A25640A00F4DE83 /* LaunchScreen.storyboard */; };
 		039EB5092A25649600F4DE83 /* HyliaSerifBeta-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 039EB5082A25649600F4DE83 /* HyliaSerifBeta-Regular.otf */; };
-		039EB50B2A25649B00F4DE83 /* BOTWBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 039EB50A2A25649B00F4DE83 /* BOTWBackground.png */; };
 		039EB50D2A2564E900F4DE83 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039EB50C2A2564E900F4DE83 /* QuestionsViewController.swift */; };
 		039EB50F2A2564F700F4DE83 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039EB50E2A2564F700F4DE83 /* ResultsViewController.swift */; };
 		039EB5112A25650200F4DE83 /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039EB5102A25650200F4DE83 /* QuestionData.swift */; };
 		039EB5132A256D1E00F4DE83 /* BotW_Link Background Removed.png in Resources */ = {isa = PBXBuildFile; fileRef = 039EB5122A256D1E00F4DE83 /* BotW_Link Background Removed.png */; };
 		039EB5152A256DD700F4DE83 /* BotW_Guardian_Artwork Background Removed.png in Resources */ = {isa = PBXBuildFile; fileRef = 039EB5142A256DD700F4DE83 /* BotW_Guardian_Artwork Background Removed.png */; };
+		71DF1C182A27774900DC7329 /* BOTWBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 71DF1C172A27774900DC7329 /* BOTWBackground.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,12 +30,12 @@
 		039EB5002A25640A00F4DE83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		039EB5022A25640A00F4DE83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		039EB5082A25649600F4DE83 /* HyliaSerifBeta-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "HyliaSerifBeta-Regular.otf"; path = "../../../../Downloads/Hylia Serif Beta v0-009/HyliaSerifBeta-Regular.otf"; sourceTree = "<group>"; };
-		039EB50A2A25649B00F4DE83 /* BOTWBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BOTWBackground.png; path = ../../../../Desktop/BOTWBackground.png; sourceTree = "<group>"; };
 		039EB50C2A2564E900F4DE83 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		039EB50E2A2564F700F4DE83 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		039EB5102A25650200F4DE83 /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
 		039EB5122A256D1E00F4DE83 /* BotW_Link Background Removed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BotW_Link Background Removed.png"; path = "../../../../Downloads/BotW_Link Background Removed.png"; sourceTree = "<group>"; };
 		039EB5142A256DD700F4DE83 /* BotW_Guardian_Artwork Background Removed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BotW_Guardian_Artwork Background Removed.png"; path = "../../../../Downloads/BotW_Guardian_Artwork Background Removed.png"; sourceTree = "<group>"; };
+		71DF1C172A27774900DC7329 /* BOTWBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BOTWBackground.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +78,9 @@
 				039EB4FF2A25640A00F4DE83 /* LaunchScreen.storyboard */,
 				039EB5022A25640A00F4DE83 /* Info.plist */,
 				039EB5082A25649600F4DE83 /* HyliaSerifBeta-Regular.otf */,
-				039EB50A2A25649B00F4DE83 /* BOTWBackground.png */,
 				039EB5122A256D1E00F4DE83 /* BotW_Link Background Removed.png */,
 				039EB5142A256DD700F4DE83 /* BotW_Guardian_Artwork Background Removed.png */,
+				71DF1C172A27774900DC7329 /* BOTWBackground.png */,
 			);
 			path = FinalProjectBOTWQuiz;
 			sourceTree = "<group>";
@@ -144,11 +144,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				039EB5152A256DD700F4DE83 /* BotW_Guardian_Artwork Background Removed.png in Resources */,
+				71DF1C182A27774900DC7329 /* BOTWBackground.png in Resources */,
 				039EB5132A256D1E00F4DE83 /* BotW_Link Background Removed.png in Resources */,
 				039EB5092A25649600F4DE83 /* HyliaSerifBeta-Regular.otf in Resources */,
 				039EB5012A25640A00F4DE83 /* LaunchScreen.storyboard in Resources */,
 				039EB4FE2A25640A00F4DE83 /* Assets.xcassets in Resources */,
-				039EB50B2A25649B00F4DE83 /* BOTWBackground.png in Resources */,
 				039EB4FC2A25640900F4DE83 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

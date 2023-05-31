@@ -26,19 +26,20 @@ class ResultsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //calculateCorrectAnswers()
+        calculateCorrectAnswers()
     }
     
-//    func calculateCorrectAnswers() {
-//        let frequencyOfAnswers = responses.reduce(into: [answerCorrect: Int]()) { (counts, answer) in
-//            if let existingCount = counts[answer.type] {
-//                counts[answer.type] = existingCount + 1
-//            } else {
-//                counts[answer.type] = 1
-//            }
-//        }
-//        //self.resultsLavel.text = "You got \()"
-//    }
+    func calculateCorrectAnswers() {
+        let frequencyOfAnswers = responses.reduce(into: [answerCorrect: Int]()) { (counts, answer) in
+            if counts[answer.type] != nil {
+                counts[answer.type, default: 0] += 1
+            }
+        }
+        return
+    }
+    
+    //resultsLavel.text =
+    
     
         // Do any additional setup after loading the view.
         
