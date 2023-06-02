@@ -9,12 +9,10 @@ import Foundation
 
 struct Answer {
     var text: String
-    var type: answerCorrect
+    var answer: String
 }
 
-enum answerCorrect: String {
-    case correct = "correct", wrong = "wrong"
-}
+
 
 struct Question {
     var text: String

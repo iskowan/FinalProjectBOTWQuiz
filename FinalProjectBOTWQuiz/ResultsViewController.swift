@@ -35,7 +35,7 @@ class ResultsViewController: UIViewController {
                 counts[answer.type, default: 0] += 1
             }
         }
-        return
+        
     }
     
     //resultsLavel.text =

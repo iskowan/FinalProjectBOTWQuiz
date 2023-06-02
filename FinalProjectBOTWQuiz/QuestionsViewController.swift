@@ -20,6 +20,7 @@ class QuestionsViewController: UIViewController {
     
     var questionIndex = 0
     var imageNumber = 1
+    var score = 0
     
     func nextQuestion() {
         questionIndex += 1
@@ -34,103 +35,110 @@ class QuestionsViewController: UIViewController {
     
     var questions: [Question] = [
         Question(text: "What is the name of this enemy?", answers: [
-            Answer(text: "Bokoblin", type: .correct),
-            Answer(text: "Goblin", type: .wrong),
-            Answer(text: "Hobgoblin", type: .wrong),
-            Answer(text: "Red Goblin", type: .wrong)
+            Answer(text: "Bokoblin", answer: "correct"),
+            Answer(text: "Goblin", answer: "wrong"),
+            Answer(text: "Hobgoblin", answer: "wrong"),
+            Answer(text: "Red Goblin", answer: "wrong")
         ]),
         Question(text: "What is the name of this outfit?", answers: [
-            Answer(text: "Bunny Hood", type: .wrong),
-            Answer(text: "Bokoblin Hood", type: .wrong),
-            Answer(text: "Ravio's Hood", type: .correct),
-            Answer(text: "Tingles Hood", type: .wrong)
+            Answer(text: "Bunny Hood", answer: "wrong"),
+            Answer(text: "Bokoblin Hood", answer: "wrong"),
+            Answer(text: "Ravio's Hood", answer: "correct"),
+            Answer(text: "Tingles Hood", answer: "wrong")
         ]),
         Question(text: "What is the name of this item?", answers: [
-            Answer(text: "Korok Sword", type: .wrong),
-            Answer(text: "Wood Sword", type: .wrong),
-            Answer(text: "Forest Dweller's Sword", type: .correct),
-            Answer(text: "Leaf Blade", type: .wrong)
+            Answer(text: "Korok Sword", answer: "wrong"),
+            Answer(text: "Wood Sword", answer: "wrong"),
+            Answer(text: "Forest Dweller's Sword", answer: "correct"),
+            Answer(text: "Leaf Blade", answer: "wrong")
         ]),
         Question(text: "What is the name of this power?", answers: [
-            Answer(text: "Ice", type: .wrong),
-            Answer(text: "Cryonis", type: .correct),
-            Answer(text: "Snow", type: .wrong),
-            Answer(text: "Crynosis", type: .wrong)
+            Answer(text: "Ice", answer: "wrong"),
+            Answer(text: "Cryonis", answer: "correct"),
+            Answer(text: "Snow", answer: "wrong"),
+            Answer(text: "Crynosis", answer: "wrong")
         ]),
         Question(text: "What is the name of this character?", answers: [
-            Answer(text: "Hetsu", type: .correct),
-            Answer(text: "Beedle", type: .wrong),
-            Answer(text: "Petsu", type: .wrong),
-            Answer(text: "Yunobo", type: .wrong)
+            Answer(text: "Hetsu", answer: "correct"),
+            Answer(text: "Beedle", answer: "wrong"),
+            Answer(text: "Petsu", answer: "wrong"),
+            Answer(text: "Yunobo", answer: "wrong")
         ]),
         Question(text: "What is the name of this outfit?", answers: [
-            Answer(text: "Koi Outfit", type: .wrong),
-            Answer(text: "Fish Outfit", type: .wrong),
-            Answer(text: "Rubber Outfit", type: .correct),
-            Answer(text: "Lightning Outfit", type: .wrong),
+            Answer(text: "Koi Outfit", answer: "wrong"),
+            Answer(text: "Fish Outfit", answer: "wrong"),
+            Answer(text: "Rubber Outfit", answer: "correct"),
+            Answer(text: "Lightning Outfit", answer: "wrong"),
         ]),
         Question(text: "What is the name of this enemy?", answers: [
-            Answer(text: "Jelly", type: .wrong),
-            Answer(text: "Blue Slug", type: .wrong),
-            Answer(text: "Blue Jelly", type: .wrong),
-            Answer(text: "Chuchu", type: .correct),
+            Answer(text: "Jelly", answer: "wrong"),
+            Answer(text: "Blue Slug", answer: "wrong"),
+            Answer(text: "Blue Jelly", answer: "wrong"),
+            Answer(text: "Chuchu", answer: "correct"),
         ]),
         Question(text: "What is the name of this place?", answers: [
-            Answer(text: "Twin Peaks", type: .wrong),
-            Answer(text: "Dual Peaks", type: .wrong),
-            Answer(text: "Double Peaks", type: .wrong),
-            Answer(text: "Dueling Peaks", type: .correct),
+            Answer(text: "Twin Peaks", answer: "wrong"),
+            Answer(text: "Dual Peaks", answer: "wrong"),
+            Answer(text: "Double Peaks", answer: "wrong"),
+            Answer(text: "Dueling Peaks", answer: "correct"),
         ]),
         Question(text: "What is the name of this item?", answers: [
-            Answer(text: "Royal Claymore", type: .wrong),
-            Answer(text: "Feathered Edge", type: .correct),
-            Answer(text: "Royal Sword", type: .wrong),
-            Answer(text: "Royal Edge", type: .wrong),
+            Answer(text: "Royal Claymore", answer: "wrong"),
+            Answer(text: "Feathered Edge", answer: "correct"),
+            Answer(text: "Royal Sword", answer: "wrong"),
+            Answer(text: "Royal Edge", answer: "wrong"),
         ]),
         Question(text: "What is the name of this character?", answers: [
-            Answer(text: "Kilton", type: .correct),
-            Answer(text: "Kiltson", type: .wrong),
-            Answer(text: "Silkton", type: .wrong),
-            Answer(text: "Kikilson", type: .wrong),
+            Answer(text: "Kilton", answer: "correct"),
+            Answer(text: "Kiltson", answer: "wrong"),
+            Answer(text: "Silkton", answer: "wrong"),
+            Answer(text: "Kikilson", answer: "wrong"),
         ]),
         Question(text: "What is the name of this outfit", answers: [
-            Answer(text: "Santa's Helper Outfit", type: .wrong),
-            Answer(text: "Elf Outfit", type: .wrong),
-            Answer(text: "Tingle's Outfit", type: .correct),
-            Answer(text: "Shingle Outfit", type: .wrong),
+            Answer(text: "Santa's Helper Outfit", answer: "wrong"),
+            Answer(text: "Elf Outfit", answer: "wrong"),
+            Answer(text: "Tingle's Outfit", answer: "correct"),
+            Answer(text: "Shingle Outfit", answer: "wrong"),
         ]),
         Question(text: "What is the name of this item?", answers: [
-            Answer(text: "Dragonfruit", type: .wrong),
-            Answer(text: "Voltfruit", type: .correct),
-            Answer(text: "Rambutan", type: .wrong),
-            Answer(text: "Pitaya", type: .wrong),
+            Answer(text: "Dragonfruit", answer: "wrong"),
+            Answer(text: "Voltfruit", answer: "correct"),
+            Answer(text: "Rambutan", answer: "wrong"),
+            Answer(text: "Pitaya", answer: "wrong"),
            
+            
         ]),
 //        Question(text: <#T##String#>, answers: [
-//            Answer(text: <#T##String#>, type: <#T##answerCorrect#>),
-//            Answer(text: <#T##String#>, type: <#T##answerCorrect#>),
-//            Answer(text: <#T##String#>, type: <#T##answerCorrect#>),
-//            Answer(text: <#T##String#>, type: <#T##answerCorrect#>),
+//            Answer(text: <#T##String#>, answer: <#T##answerCorrect#>),
+//            Answer(text: <#T##String#>, answer: <#T##answerCorrect#>),
+//            Answer(text: <#T##String#>, answer: <#T##answerCorrect#>),
+//            Answer(text: <#T##String#>, answer: <#T##answerCorrect#>),
 //        ]),
 //        Question(text: <#T##String#>, answers: [
-//            Answer(text: <#T##String#>, type: <#T##answerCorrect#>),
-//            Answer(text: <#T##String#>, type: <#T##answerCorrect#>),
-//            Answer(text: <#T##String#>, type: <#T##answerCorrect#>),
-//            Answer(text: <#T##String#>, type: <#T##answerCorrect#>),
+//            Answer(text: <#T##String#>, answer: <#T##answerCorrect#>),
+//            Answer(text: <#T##String#>, answer: <#T##answerCorrect#>),
+//            Answer(text: <#T##String#>, answer: <#T##answerCorrect#>),
+//            Answer(text: <#T##String#>, answer: <#T##answerCorrect#>),
 //        ]),
 //        Question(text: <#T##String#>, answers: [
-//            Answer(text: <#T##String#>, type: <#T##answerCorrect#>),
-//            Answer(text: <#T##String#>, type: <#T##answerCorrect#>),
-//            Answer(text: <#T##String#>, type: <#T##answerCorrect#>),
-//            Answer(text: <#T##String#>, type: <#T##answerCorrect#>),
+//            Answer(text: <#T##String#>, answer: <#T##answerCorrect#>),
+//            Answer(text: <#T##String#>, answer: <#T##answerCorrect#>),
+//            Answer(text: <#T##String#>, answer: <#T##answerCorrect#>),
+//            Answer(text: <#T##String#>, answer: <#T##answerCorrect#>),
 //        ]),
 //        Question(text: <#T##String#>, answers: [
-//            Answer(text: <#T##String#>, type: <#T##answerCorrect#>),
-//            Answer(text: <#T##String#>, type: <#T##answerCorrect#>),
-//            Answer(text: <#T##String#>, type: <#T##answerCorrect#>),
-//            Answer(text: <#T##String#>, type: <#T##answerCorrect#>),
+//            Answer(text: <#T##String#>, answer: <#T##answerCorrect#>),
+//            Answer(text: <#T##String#>, answer: <#T##answerCorrect#>),
+//            Answer(text: <#T##String#>, answer: <#T##answerCorrect#>),
+//            Answer(text: <#T##String#>, answer: <#T##answerCorrect#>),
 //        ]),
     ]
+    
+    func getScore() -> Int {
+        return score
+    }
+    
+    
     
     var answersChosen: [Answer] = []
     
@@ -174,7 +182,7 @@ class QuestionsViewController: UIViewController {
         navigationItem.title = "Question #\(questionIndex+1)"
         questionLabel.text = currentQuestion.text
         newQuestion(using: currentAnswers)
-        
+        print(answersChosen)
     }
  
     @IBSegueAction func showResults(_ coder: NSCoder) -> ResultsViewController? {
